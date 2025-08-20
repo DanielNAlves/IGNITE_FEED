@@ -1,0 +1,17 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.4.0/schema.json",
+	"linter": {
+		"rules": {
+			"a11y": {
+				"useValidAnchor": "off"
+			},
+			"style": {
+				"useSortedImports": ["off"],
+				"noTrailingSpaces": ["off"],
+				"noEmptyLines": ["off"],
+				"indent": ["off"],
+				"noMultipleSpaces": ["off"]
+			}
+		}
+	}
+}
