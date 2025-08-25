@@ -3,7 +3,8 @@ import { Comment } from "./Comment";
 
 import styles from "./Post.module.css";
 
-export function Post() {
+export function Post(props) {
+	console.log(props);
 	return (
 		<article className={styles.post}>
 			<header>
@@ -25,20 +26,7 @@ export function Post() {
 			</header>
 
 			<div className={styles.content}>
-				<p>Fala galeraa 👋</p>
-				<p>Acabei de subir mais um projeto no meu portifa.</p>
-				<p>
-					É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do
-					projeto é DoctorCare 🚀{" "}
-				</p>
-				<pre>
-					👉 <a href="#">jane.design/doctorcare</a>
-				</pre>
-
-				<pre>
-					<a href="#">#novoprojeto</a> <a href="#">#nlw</a>{" "}
-					<a href="#">#rocketseat</a>
-				</pre>
+				
 			</div>
 
 			<form className={styles.commentForms}>
