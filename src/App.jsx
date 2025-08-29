@@ -9,15 +9,15 @@ const posts = [
 	{
 		id: 1,
 		author: {
-			avatarUrl: "https://github.com/DanielAlves.png",
+			avatarUrl: "https://github.com/DanielNAlves.png",
 			nome: "Daniel Alves",
 			role: "Dev front-end"
 		},
 
 		content: [
 		{type: 'paragraph', content: 'Fala galeraa 👋'},
-		{type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀{" "}'}, 
-		{type: 'link', content: '👉 <a href="#">jane.design/doctorcare</a>'},		
+		{type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀'}, 
+		{type: 'link', content: '👉 ane.design/doctorcare'},
 		],
 
 		publishedAt: new Date('2019-11-23 16:00:00'),
@@ -26,18 +26,35 @@ const posts = [
 	{
 		id: 2,
 		author: {
-			avatarUrl: "https://github.com/DanielAlves.png",
+			avatarUrl: "https://github.com/diego3g.png",
 			nome: "Daniel V N Alves",
 			role: "Dev front-end"
 		},
 
 		content: [
 		{type: 'paragraph', content: 'Fala galeraa 👋'},
-		{type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀{" "}'}, 
-		{type: 'link', content: '👉 <a href="#">jane.design/doctorcare</a>'},		
+		{type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀'}, 
+		{type: 'link', content: '👉 ane.design/doctorcare'},		
 		],
 
-		publishedAt: new Date('2019-11-20 15:30:00'),
+		publishedAt: new Date('2025-08-26 16:30:00'),
+
+	},
+	{
+		id: 3,
+		author: {
+			avatarUrl: "https://github.com/maykbrito.png",
+			nome: "Daniel V N Alves",
+			role: "Dev front-end"
+		},
+
+		content: [
+		{type: 'paragraph', content: 'Fala galeraa 👋'},
+		{type: 'paragraph', content: 'Acabei de subir mais um projeto no meu portifa. É um projeto que fiz no NLW Return, evento da Rocketseat.O nome do projeto é DoctorCare 🚀'}, 
+		{type: 'link', content: '👉 ane.design/doctorcare'},
+		],
+
+		publishedAt: new Date('2025-08-21 15:30:00'),
 
 	},
 ];
