@@ -28,7 +28,12 @@ const [newCommentText, setNewCommentText] = useState('');
 	}
 
 	function handleNewCommentChange() {
+		event.target.setCustomValidity('');
 		setNewCommentText(event.target.value);
+	}
+
+	function headlerNewCommentInvalid() {
+		event.target.setCustomValidity('Esse campo é obrigatório!');
 	}
 
 	function deleteComment(commentToDelete){
@@ -38,6 +43,8 @@ const [newCommentText, setNewCommentText] = useState('');
 
 		setComments(commentsWithoutDeleteOne);
 	}
+
+	const isNewCommentEmpty = newCommentText.length === 0;
 
 	return (
 		<article className={styles.post}>
@@ -74,10 +81,13 @@ const [newCommentText, setNewCommentText] = useState('');
 				<textarea name="comment" 
 				placeholder="Deixe um comentário" 
 				value={newCommentText}
-				onChange={handleNewCommentChange} />
+				onChange={handleNewCommentChange}
+				inValid={headlerNewCommentInvalid} 
+				required
+				/>
 
 				<footer>
-					<button type="submit">Publicar</button>
+					<button type="submit" disabled={isNewCommentEmpty}>Publicar</button>
 				</footer>
 			</form>
 
